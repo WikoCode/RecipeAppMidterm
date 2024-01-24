@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".recipies.presentation.screen.login.LoginFragment">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/appCompatTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/hello"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/appCompatTextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/welcome_back"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatTextView" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/appCompatTextView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="57dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/email"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatTextView2" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etLoginEmail"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/fields_rectangle"
+        android:fontFamily="@font/poppins_regular"
+        android:hint="@string/enter_email"
+        android:inputType="textEmailAddress"
+        android:paddingHorizontal="16dp"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatTextView3" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/appCompatTextView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/password"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etLoginEmail" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etLoginPassword"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/fields_rectangle"
+        android:fontFamily="@font/poppins_regular"
+        android:hint="@string/enter_password"
+        android:inputType="textPassword"
+        android:paddingHorizontal="16dp"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatTextView4" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvForgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/forgot_password"
+        android:textColor="@color/text_color_selector"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etLoginPassword" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSignIn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/green_rectangle"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/button_selector"
+        android:text="@string/sign_in"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvForgotPassword" />
+
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="50dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/Gray"
+        app:layout_constraintEnd_toStartOf="@+id/appCompatTextView6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSignIn" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/appCompatTextView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/or_sign_in_with"
+        android:textColor="@color/Gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSignIn" />
+
+    <View
+        android:layout_width="50dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="90dp"
+        android:background="@color/Gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/appCompatTextView6"
+        app:layout_constraintTop_toBottomOf="@+id/btnSignIn" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/btnLoginGoogle"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_with_shadow"
+        android:src="@drawable/ic_google"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatTextView6" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/appCompatTextView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="75dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/don_t_have_an_account"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLoginGoogle" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvLoginSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="90dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/sign_up"
+        android:textColor="@color/text_color_selector"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLoginGoogle" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

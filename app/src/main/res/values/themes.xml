@@ -1,0 +1,8 @@
+<resources>
+    <style name="Base.Theme.RecipeAppMidterm" parent="Theme.Material3.DayNight.NoActionBar">
+
+    </style>
+k
+    <style name="Theme.RecipeAppMidterm" parent="Base.Theme.RecipeAppMidterm" />
+
+</resources>
